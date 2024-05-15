@@ -1,4 +1,4 @@
-package practice.test;
+package practice.prac;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

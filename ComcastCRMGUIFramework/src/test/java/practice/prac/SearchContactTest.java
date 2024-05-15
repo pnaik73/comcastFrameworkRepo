@@ -1,4 +1,4 @@
-package practice.test;
+package practice.prac;
 /**
  * test class for contact module
  * @author priyanka

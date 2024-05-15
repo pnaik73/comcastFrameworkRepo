@@ -1,4 +1,4 @@
-package practice.test;
+package practice.prac;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
