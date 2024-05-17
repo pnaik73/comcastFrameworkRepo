@@ -3,10 +3,10 @@
   <groupId>SeleniumCRMGUIFramework</groupId>
   <artifactId>SeleniumCRMGUIFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <properties>
+ <!-- <properties>
 	  <maven.compiler.target>17</maven.compiler.target>
 	   <maven.compiler.source>17</maven.compiler.source>
-  </properties>
+  </properties>-->
   <dependencies>
  
 	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -65,8 +65,7 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>LATEST</version>
-    <scope>test</scope>
+    <version>7.7.1</version>
 </dependency>
   </dependencies>
   <profiles>
