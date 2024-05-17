@@ -14,7 +14,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class SampleReportTest {
+public class SampleReport {
 public	ExtentReports report;
 	@BeforeSuite
 	public void bsconfib(){

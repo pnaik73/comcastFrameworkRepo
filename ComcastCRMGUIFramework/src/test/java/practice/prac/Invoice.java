@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.comcast.crm.basetest.BaseClass;
 
 import junit.framework.Assert;
-public class InvoiceTest extends BaseClass {
+public class Invoice extends BaseClass {
 	
 @Test
 public void createInvoice() {

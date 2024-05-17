@@ -43,7 +43,7 @@ import junit.framework.Assert;
  */
 @Listeners(com.comcast.crm.generic.listnerutility.ListnerImplementation.class)
 public class CreateOrganizationTest extends BaseClass {
-	@Test//(groups="smoke test")
+	@Test(groups="smoke test")
 	public void createOrgTest() throws EncryptedDocumentException, IOException {
 		
 		//navigation to organization page

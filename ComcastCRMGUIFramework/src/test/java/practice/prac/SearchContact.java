@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.comcast.crm.basetest.BaseClass;
 import com.comcast.crm.objectrepositoryutility.LoginPage;
 
-public class SearchContactTest extends BaseClass{
+public class SearchContact extends BaseClass{
 	/**
 	 * scenario: login()==> navigateContact==>createContact()==>verify
 	 */

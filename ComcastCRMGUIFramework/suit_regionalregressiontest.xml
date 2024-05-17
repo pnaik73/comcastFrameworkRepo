@@ -3,11 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.comcast.crm.OrgTest.CreateOrganizationTest">
-      <methods>
-      <include name="createOrgTest"/>
-      </methods>
-      </class>
       <class name="com.comcast.crm.contactTest.CreateContactTest">
      <methods>
       <include name="createContactWithOrg"/>

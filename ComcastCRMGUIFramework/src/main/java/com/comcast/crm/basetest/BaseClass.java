@@ -44,11 +44,12 @@ public class BaseClass  {
 		dblib.getDbConnection();
 	}
 	//@Parameters("BROWSER")
-	@BeforeClass//(groups ={"smoke test", "regression"})
+	@BeforeClass(groups ={"smoke test", "regression"})
 	public void configBeforeClass(/*String browser*/) throws IOException {
 		System.out.println("==launch browser");
 		//String Browser=browser;
-		String Browser=flib.getDataFromPropertiesFile("browser");
+		//String Browser=flib.getDataFromPropertiesFile("browser");
+		String Browser=System.getProperty("browser" , flib.getDataFromPropertiesFile("browser") );
 		if(Browser.equals("chrome")) {
 			driver=new ChromeDriver();
 		}
@@ -68,11 +69,14 @@ public class BaseClass  {
 	public void configBeforemethod() throws IOException {
 		LoginPage lp =new LoginPage(driver);
 		System.out.println("=login=");
-		String url = flib.getDataFromPropertiesFile("url");
+		/*String url = flib.getDataFromPropertiesFile("url");
 		String username = flib.getDataFromPropertiesFile("username");
 		String password = flib.getDataFromPropertiesFile("password");
-		lp.loginToapp(url, username, password);		
-
+			*/	
+		String url = System.getProperty("url" , flib.getDataFromPropertiesFile("url"));
+		String username =System.getProperty("username" , flib.getDataFromPropertiesFile("username"));
+		String password =System.getProperty("password" , flib.getDataFromPropertiesFile("password"));
+		lp.loginToapp(url, username, password);
 	}
 	@AfterMethod(groups ={"smoke test", "regression"})
 	public void configAftermethod() throws InterruptedException {

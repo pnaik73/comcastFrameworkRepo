@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 import com.comcast.crm.generic.FilleUtility.ExcelUtility;
 import com.comcast.crm.generic.WebdriverUtility.WebDriverUtility;
 
-public class GetProductInfoTest {
+public class GetProductInfo {
 	@Test(dataProvider = "getData")
 	public void getProductInfoTest(String brandName, String productName) {
 		WebDriver driver=new ChromeDriver();

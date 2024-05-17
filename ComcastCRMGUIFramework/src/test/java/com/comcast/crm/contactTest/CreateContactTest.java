@@ -18,6 +18,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -38,6 +39,7 @@ import com.comcast.crm.objectrepositoryutility.SearchLookUp;
  * 
  * @author Priyanka
  */
+@Listeners(com.comcast.crm.generic.listnerutility.ListnerImplementation.class)
 public class CreateContactTest extends BaseClass{
 	@Test(groups={"smoke test","regression"})
 	public void createContTest() throws IOException{

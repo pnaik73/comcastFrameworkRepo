@@ -20,7 +20,7 @@ import com.comcast.crm.objectrepositoryutility.LoginPage;
 import com.comcast.crm.objectrepositoryutility.OrganizationInfoPage;
 import com.comcast.crm.objectrepositoryutility.OrganizationsPage;
 
-public class DeleteOrgtest extends BaseClass {
+public class DeleteOrg extends BaseClass {
 @Test
 	public void deleteOrgTest() throws EncryptedDocumentException, IOException {
 		
